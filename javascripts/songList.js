@@ -23,25 +23,3 @@ $( document ).on( "click", "#deleteButton", function() {
 
 
 
-
-
-// $(document).ready(function() {
-// $.ajax({
-//    url: "songs.json"
-// }).done(function(data) {
-//  addSongs(data)
-// })
-// });
-
-
-
-// $("#more").click(function() {  
-//  $.ajax({
-//    url: "songs2.json"
-// }).done(function(data) {
-//  addSongs(data)
-// })
-// });
-
-
-

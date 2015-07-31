@@ -7,6 +7,10 @@ requirejs(
 
 
     addSongs(pop.songs, dom);
+    
+    $("#more").click(function() { 
+     addSongs(getMore.songs, dom); 
+  });
 
   }
 
@@ -30,6 +34,10 @@ function addSongs(data, domElementFromDomAccess) {
     console.log("#newSongs");
   }
 }
+
+$( document ).on( "click", "#deleteButton", function() {
+  $( this ).parent().remove();
+});
 
 
 
