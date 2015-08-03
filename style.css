@@ -67,6 +67,9 @@ nav li + li:before{
 
 .songs li {
   display: inline;
+  background-color: linen;
+  padding: 3px;
+  border-radius: 5px;
 }
 
 .songs li + li:before{
@@ -79,8 +82,12 @@ ul {
 }
 
 .songs p {
+  font-size: 1.3em;
+  font-family: sans-serif;
   color: #785616;
-  padding: 0 0 0 30px;
+  padding: 5px 5px 5px 30px;
+  border-radius: 25px;
+
 }
 
 table {

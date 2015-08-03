@@ -1,16 +1,12 @@
 define(function() {
  
-  var songs;
-
-  $.ajax({
-		url: "songs.json",
-    async: false
-  }).done(function(data) {
-    songs = data;
-  });
-
-  return {
-    songs: songs
-  }
-  
+ return {
+    songs: function(callback) {
+      $.ajax({
+        url: "songs.json"
+      }).done(function(data) {
+        callback.call(this, data.songs);
+      });
+    }
+  };
 });
